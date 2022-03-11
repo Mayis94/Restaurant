@@ -14,6 +14,6 @@ export class UserService {
   }
 
   static async create({ data }) {
-    User.create(data);
+    return User.create(data);
   }
 }

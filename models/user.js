@@ -14,7 +14,7 @@ const UserSchema = new Schema({
   },
   phone_number: {
     type: Number,
-    minlength: 6,
+    minlength: 1,
     maxlength: 15,
   },
   address: {

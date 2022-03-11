@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const ProductSchema = new Schema({
   product_name: {
     type: String,
-    minlength: 3,
+    minlength: 1,
     maxlength: 20,
   },
   price: { type: Number, minlength: 3, maxlength: 20 },

@@ -31,7 +31,7 @@ export class ProductController {
   }
   static async manyProduct(req, res) {
     ProductService.createManyProduct({ data: req.body })
-      .then((category) => res.send("ok"))
+      .then((category) => res.json(category[0]._id))
       .catch((err) => {
         res.status(400).send(err);
       });

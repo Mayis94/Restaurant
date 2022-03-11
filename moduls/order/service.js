@@ -13,6 +13,6 @@ export class OrderService {
   }
 
   static async create({ data }) {
-    Order.create(data);
+    return Order.create(data);
   }
 }
