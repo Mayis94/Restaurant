@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
    const ModOptionSchema = new Schema({
    
-    option_name: {
+    name: {
       type: String
     
   },

@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
    const ModGroupSchema = new Schema({
    
-    modGroup: {
+    name: {
         type: String,
         minlength:3,
         maxlength:20

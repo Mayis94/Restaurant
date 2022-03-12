@@ -15,4 +15,7 @@ export class ModOptionService {
   static async create({ data }) {
     return ModOption.create(data);
   }
+  static async createManyModOption({ data }) {
+    return ModOption.insertMany(data);
+  }
 }

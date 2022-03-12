@@ -2,7 +2,7 @@ import { Product } from "../../../models/menu/product";
 
 export class ProductService {
   static async find() {
-    return Product.find();
+    return Product.find().populate({path:"modGroup_id",populate:{path:'modOption_id'}});
   }
   static async update({ params }, { data }) {
     return Product.findByIdAndUpdate(params, data);

@@ -25,4 +25,9 @@ export class ModGroupController {
         res.status(400).send(err);
       });
   }
+  static async manyModGroup(req, res) {
+    ModGroupService.createManyModGroup({ data: req.body })
+      .then((category) => res.json(category))
+      .catch(res.status(500).send("err"))
+  }
 }

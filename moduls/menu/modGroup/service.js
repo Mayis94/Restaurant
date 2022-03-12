@@ -15,4 +15,7 @@ export class ModGroupService {
   static async create({ data }) {
     return ModGroup.create(data);
   }
+  static async createManyModGroup({ data }) {
+    return ModGroup.insertMany(data);
+  }
 }
